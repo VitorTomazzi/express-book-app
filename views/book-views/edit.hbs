@@ -1,0 +1,18 @@
+<h2> Add new book to library</h2>
+
+<form action="/books/update/{{book._id}}" method="POST">
+
+<p>Title</p>
+<p>Current Title: {{book.title}}</p>
+<input type="text" name='theTitle'>
+
+<p>Author</p>
+<p>Current Author: {{book.author}}</p>
+<input type="text" name='theAuthor'>
+
+<p>Image</p>
+<input type="text" name='theImage' placeholder="current image: {{book.image}}">
+
+<button>SAVE</button>
+
+</form>
