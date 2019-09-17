@@ -64,7 +64,7 @@ router.post('/creation', (req, res, next)=>{
 
 
 
-router.post('/delete/:id', (res, req, next)=>{
+router.post('/delete/:id', (req, res, next)=>{
   let id = req.params.id
 
   Book.findByIdAndRemove(id)
